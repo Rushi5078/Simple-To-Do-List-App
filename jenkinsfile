@@ -8,12 +8,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/Rushi5078/Simple-To-Do-List-App.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 script {
